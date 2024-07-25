@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--Ver-Dark-Magenta: hsl(300, 43%, 22%);
+	--Soft-Pink: hsl(333, 80%, 67%);
+	--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+	--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+	--White: hsl(0, 0%, 100%);
+}
+body{
+	font-family: "League Spartan", sans-serif;
+	Font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+main{
+	background-color: hsl(280deg 33.33% 98.24%);
+	width: 1400px;
+}
+.container{
+	width: 90%;
+}
+.container div.head-1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--Ver-Dark-Magenta);
+	margin-bottom: 5rem;
+}
+.container .head-2 h1{
+	font-size: 4rem;
+	width: 450px;
+	margin-bottom: 1.5rem;
+}
+.container .head-2 p{
+	width: 450px;
+	line-height: 1.5rem;
+	color: var(--Dark-Grayish-Magenta);
+	font-size: 1.2rem;
+	margin-bottom: 3rem;
+}
+.container .rate{
+	width: 450px;
+}
+.container .rate-1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	background-color: var(--Light-Grayish-Magenta);
+	border-radius: 10px;
+}
+.container .rate-1 p{
+	font-weight: bold;
+	color: var(--Ver-Dark-Magenta);
+	font-size: 1rem;
+}
+.container .left-1 {
+	margin-left: -8rem;
+	margin-right: 8rem;
+}
+.container .left-2 {
+	margin-left: -4rem;
+	margin-right: 4rem;
+}
+.avatar{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+.avatar .same{
+	background-color: var(--Ver-Dark-Magenta);
+	color: var(--White);
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+.avatar img{
+	border-radius: 50%;
+	width: 50px;
+	aspect-ratio: 1;
+	margin: 1.5rem 0  1rem 1rem;
+}
+.profile-1{
+	margin: 1.5rem 0 1rem 1rem;
+}
+.avatar .same-1{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1rem;
+
+}
+.avatar p.sum{
+	color: var(--Soft-Pink);
+}
+.avatar p.detail{
+	margin-left: 1.2rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+	width: 315px;
+	text-align: center;
+	font-size: 1rem;
+}
+.avatar .dif-1{
+	margin-bottom: 4rem;
+	margin-top: -4rem;
+}
+.avatar .dif-2{
+	margin-bottom: 2rem;
+	margin-top: -2rem;
+}
+@media (max-width: 550px){
+	body{
+		overflow: visible;
+	}
+	main{
+		width: 400px;
+		height: 100vh;
+	}
+	.container{
+		width: 100%;
+	}
+	.container .head-1{
+		flex-direction: column;
+	}
+	.container .head-2 {
+		text-align: center;
+	}
+	.container .head-2 p {
+		width: fit-content;
+		margin: 0 5rem 2rem;
+	}
+	.container .rate-1 {
+		margin-left: 3.5rem;
+		margin-right: 3.5rem;
+	}
+	.container .rate-1 {
+		display: block;
+		text-align: center;
+	}
+	.avatar{
+		display: block;
+		padding: 2rem;
+	}
+}
